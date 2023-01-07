@@ -33,7 +33,7 @@ end
 
 platform :ios do
   lane :prepare_xcode_project do
-    system("git clone --recursive git@github.com:MeridianOXC/openxcom-ios.git ../openxcom-ios")
+    system("git clone --recursive https://github.com/MeridianOXC/openxcom-ios ../openxcom-ios")
     # lock version
     system("sh -c \"git --git-dir ../openxcom-ios/.git checkout f1e667bd04da512601e90189422f5c2411eeb86f\"")
 
